@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Crust We Trust Pizza Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b078bb3940.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+
+
+<body>
+    
+    <div id="container"> 
+        <div id="main">
+             <div class="logo">
+                <img src="ICWT Images/icwtlogo.png" alt="Logo" class="center">
+        
+        </div>  
+        <ul class="nav-area">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#container2">ABOUT</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="chat.html">CHAT</a></li>
+        </ul> 
+    </div>  
+
+    
+
+        <div class="welcome-text">
+            <h1>In Crust We Trust<br>Pizza Co.</h1>
+            <a href="https://youtu.be/uMtK7OWDc68">Youtube Channel</a>
+            
+
+           </div>
+
+    
+
+        
+    <div id="container2">
+
+      
+      
+        <div class="about">
+            <h1>OUR MISSION</h1>
+            <h2>In Trust We Crust Pizza Company</h2>
+            <p> has been family owned and operated since 1986 in the heart of Washington D.C. Same ingredients, same mission...We are going to cook for you like you're part of our family. All dough is made in house, fresh ingredients sourced from local farmers. We strive to give you and your family the best experience possible without breaking the bank.<br><br><br> Make sure you follow us on all platforms linked below to keep you updated on new menu items and pop up events!</p>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99354.20069428858!2d-77.09855258231812!3d38.90525942785527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b89ba5f383%3A0x98543553a268ea16!2s%26pizza%20-%20Dupont!5e0!3m2!1sen!2sus!4v1635369103082!5m2!1sen!2sus" width="560" height="250" style="border:solid red 2px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+           
+
+            
+    </div>
+
+   
+    
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="ICWT Images/johnny.jpg" style="width:100%">
+      <div class="johns-test">"If you're looking for great pizza and a place with fresh ingredients go to ICWT Pizza Co.! The fam and I stop there atleast once a week!"<br> -John Perez</div>
+    </div>
+<div class="slideshow-container2"> 
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="ICWT Images/arthur.jpg" style="width:100%">
+      <div class="joeys-test">"I started working here about 5 years ago...freshman in college. They welcomed me with opened arms and taught me what family cooking was really about."-Joey Rossi</div>
+</div>
+ 
+   
+<div class="slideshow-container3"> 
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="ICWT Images/customer.jpg" style="width:100%">
+      <div class="mayras-test">"ICWT always does pop ups at my high school! Everyone loves their pizza so much that the long but worth it! They're so nice even pass out mini slices to the line."-Mayra Lourene</div>
+</div>
+
+<div>      
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  
+  
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</div> 
+
+<script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+   slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+
+
+
+
+    <footer id="footer">
+         <ul>
+            
+            <li><a href="https://www.instagram.com/inthecrustwetrust/?hl=en"><i class="fab fa-5x fa-instagram-square" class="insta-icon"></a></i></li>
+            <li><a href="https://twitter.com/pizzapilgrims?lang=en"><i class="fab fa-5x fa-twitter-square" class="twitter-icon"></a></i></li>
+            <li><a href="https://m.facebook.com/incrustwettust/photos/a.128563161861846/276305520420942/?type=3&_rdr"><i class="fab fa-5x fa-facebook" class="fb-icon"></a></i></li>
+        </ul>
+
+        
+     
+        <p>POWERED BY: Monique Islas<br><iframe width="300" height="50" scrolling="no" frameborder="no" allow="" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254470604&color=%23ff3d00&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/shannon-and-the-clams" title="Shannon and the Clams" target="_blank" style="color: #cccccc; text-decoration: none;"></a> ·</div>
+        </p>
+     
+    </footer>
+
+
+
+</html>

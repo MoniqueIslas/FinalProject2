@@ -1,0 +1,317 @@
+@charset "utf-8";
+*{
+    margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height:100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height:100%;
+}
+
+#main{
+  overflow:auto;
+  height:665px;
+  width:1200px;
+    
+    
+}
+
+#container{
+    background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('pizzabackgroundfinal.jpg');background-size:100%;
+  background-position: cover;
+  position:relative;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.center{
+  display: block;
+  padding-left:36%;
+  padding-top: 50px;
+}
+
+.nav-area{
+  position:fixed;
+  top: 6px;
+  right:10px;
+  padding: 27px;
+  word-spacing: 10px;
+}
+
+.nav-area a{
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-family:'Fjalla One', sans-serif;
+  filter:drop-shadow(15px 15px 15px grey)
+}
+
+.nav-area li{
+  display:inline-block;
+}
+
+.nav-area li a:hover{
+  background:#333;
+  color:#fff;
+}
+
+.logo img{
+  filter: drop-shadow(15px 15px 15px white); 
+}
+
+.welcome-text{
+  position: absolute;
+  top: 10px;
+  left:16px;
+  padding: 40px;
+}
+
+.welcome-text h1{
+  font-family:'Fjalla One', sans-serif;
+  font-size: 30px;
+  filter:drop-shadow(10px 10px 10px white);
+}
+
+.welcome-text :link{
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  padding: 20px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.welcome-text a{
+  color: white;
+}
+
+.google-map{
+  padding-top: 10px;
+  z-index:initial;
+  position: absolute;
+}
+
+.about{
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Black Han Sans', sans-serif;
+  padding-left: 10%;
+  padding-top: 10%;
+  scroll-behavior: smooth;
+  column-width: 30%px;
+}
+
+ h1{
+  color:red;
+  margin-bottom: 0px;
+}
+
+.about h2{
+  font-size: 30px;
+  font-family: 'Special Elite';
+  font: weight 1000px;
+}
+
+.about p {
+  font: 40px;
+  font-family: 'Special Elite';
+}
+
+#container2{
+  background-color: white;
+  scroll-behavior: smooth;
+  column-count: 2;
+  column-gap: 70px;
+  height:820px;
+  width: auto;
+}
+
+.slideshow-container {
+  width:450px;
+  position: relative;
+  padding-top: 100px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slideshow-container img{
+  border-radius: 50%;
+}
+
+.mySlides {
+  display: none;
+}
+  
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+  
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    
+}
+  
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+ }
+  
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.johns-test{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align-last: center;
+  text-shadow:0 0 9px black;
+  background: rgba(7, 7, 7, 0.5)
+  
+}
+
+.joeys-test{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align-last: center;
+  text-shadow:0 0 9px black;
+  background: rgba(36, 37, 36, 0.5)
+}
+
+.mayras-test{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align-last: center;
+  text-shadow:0 0 9px black;
+  background: rgba(36, 37, 36, 0.5)
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  clear:both;
+  text-align: center;
+  background: black;
+}
+
+#footer p{
+  font-size: 20px;
+  color:grey;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: .1 px;
+}
+
+ul li:hover{
+  background-color: white;
+  border-radius: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  text-align: center;
+  margin:0;
+  padding-top:1px;
+  overflow: hidden;
+  cursor:pointer;
+  transition: all 0.7s ease;
+}
+
+.fab{
+  padding: 0 35px 1px;
+  color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

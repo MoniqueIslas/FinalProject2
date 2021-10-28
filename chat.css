@@ -1,0 +1,81 @@
+.nav-area{
+    position:fixed;
+    top: 6px;
+    right:10px;
+    padding: 27px;
+    word-spacing: 10px;
+}
+
+.nav-area a{
+    color:lightgreen;
+    text-decoration: none;
+    font-size: 41px;
+    font-family:'Fjalla One', sans-serif;
+    filter:drop-shadow(15px 15px 15px green)
+}
+
+.nav-area li{
+    display:inline-block;
+}
+
+.nav-area li a:hover{
+        background:#333;
+        color:#fff;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 2px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('/chatbg.jpg');
+    background-size: cover;
+    background-repeat: none;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    font-family:'Special Elite';
+}
+
+.container1{
+    border-radius: 5px;
+    background-color:black;
+    padding: 10px 400px;
+    margin-top: 200px;
+    opacity: 0.7;
+    font-family: 'Special Elite';
+}
+
+.container2{
+    
+    border-radius: 5px;
+    background-color: black;
+    padding:0 400px;
+    opacity: 0.7;
+    font-family: 'Special Elite';
+}
+
+
+    

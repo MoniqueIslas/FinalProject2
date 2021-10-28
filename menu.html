@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICWT MENU</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Special+Elite&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+</div>  
+    <ul class="nav-area">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#container2">ABOUT</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="chat.html">CHAT</a></li>
+    </ul> 
+</div>  
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <div>
+      <h1>PIZZA MENU</h1>
+        <ul>OG Cheese Pizza . . . . . $24</ul>
+          <h6>or create your own pizza</h6>
+
+            <ul>Sicilian Cheese Pizza . . . $26</ul>
+          <h6>or create your own pizza</h6>
+
+            <ul>White Pizza . . . . . . . . . .$24</ul>
+             
+              <ul>*Vegan Pizza . . . . . . . . . $24</ul>
+
+              <ul>Margherita Pizza . . . . . . $24</ul>
+            </div>
+            
+              <p class="fine print">* request when ordering</p>
+            
+            </div>
+            
+            <div class="mySlides">
+              <h1>SUPREME MENU</h1>
+              <ul>Cheese Pan Pizza . . . . . $12</ul>
+              <h6>or create your own pizza</h6>
+
+              <ul>Cheese Pan Pizza with 3 Toppings. . .$14</ul>
+            </div>
+            
+            <div class="mySlides">
+              <h1>APPETIZERS</h1>
+              <ul>Meatball Parm Sub. . . . . $12</ul>
+              <ul>Eggplant Parm Sub. . .$10</ul>
+              <h1>DRINK</h1>
+
+              <ul>Bottled Coke. . . . . . $2</ul>
+              <ul>Bottled 7UP. . . . . . $2</ul>
+            </div>
+            
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>  
+
+     </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+
+
+
+</body>
+</html>

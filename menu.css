@@ -1,0 +1,92 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.nav-area{
+  position:fixed;
+  top: 6px;
+  right:10px;
+  padding: 27px;
+  word-spacing: 10px;
+}
+
+.nav-area a{
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-family:'Fjalla One', sans-serif;
+  filter:drop-shadow(15px 15px 15px white)
+}
+
+.nav-area li{
+  display:inline-block;
+}
+
+.nav-area li a:hover{
+      background:#333;
+      color:#fff;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  border: 10px solid red;
+  border-radius: 10px;
+  margin: 120px 20px 40px;
+  height:700px;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 60px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+h1{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 70px;
+  margin-top: 1px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 10px 10px 5px 10px;
+}
+
+h6 {
+    margin-top: 1px;
+    line-height: 1px;
+    font-size: 15px;
+    font-family: 'Special Elite';
+}
+
+ul{
+    margin: 7px;
+    font-size: 60px;
+    font-family: 'Special Elite';
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Special Elite';
+    color:grey; 
+}
